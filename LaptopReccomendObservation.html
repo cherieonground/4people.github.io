@@ -1,13 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Laptop Reccomendation</title>
-    <script
-	type="module"
-	src="https://gradio.s3-us-west-2.amazonaws.com/4.42.0/gradio.js"
-    ></script>
+    <title>Laptop Recommendation</title>
+    <script type="module" src="https://gradio.s3-us-west-2.amazonaws.com/4.42.0/gradio.js"></script>
+    <style>
+        /* Background color for the whole page */
+        body {
+            background-color: #f0f0f0; /* Light grey background */
+            font-family: Arial, sans-serif;
+        }
+
+        /* Customize Gradio app styles */
+        gradio-app {
+            --bg-color: #ffffff; /* White background for the interface */
+            --primary-text-color: #333333; /* Dark text */
+            --font-size: 16px; /* Base font size */
+            --button-color: #4CAF50; /* Green buttons */
+            --input-bg-color: #e8f0fe; /* Light blue input fields */
+            --header-color: #4CAF50; /* Header text color */
+        }
+
+        /* Styling specific elements within Gradio interface */
+        h1, h2, h3 {
+            color: #4CAF50; /* Green for headings */
+        }
+
+        /* Customize buttons */
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        /* Customize input fields */
+        input {
+            background-color: #e8f0fe; /* Light blue input background */
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+    </style>
 </head>
 <body>
+    <h1>Laptop Recommendation System</h1>
+    <p>Get the best recommendations for a laptop based on your needs.</p>
+
     <gradio-app src="https://watacent-laptopreccomendationonindiamarket.hf.space"></gradio-app>
 </body>
 </html>
