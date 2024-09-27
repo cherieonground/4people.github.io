@@ -7,78 +7,31 @@
         src="https://gradio.s3-us-west-2.amazonaws.com/4.42.0/gradio.js"
     ></script>
     <style>
-        /* Basic styling for the body */
         body {
-            background-color: #ff9999; /* Light red background */
+            background-color: #ff9999; /* Set the background color */
             color: black; /* Text color */
             font-family: Arial, sans-serif; /* Font style */
-            margin: 0; /* Remove default margin */
-            padding: 0; /* Remove default padding */
-            text-align: center; /* Center align text */
         }
-
-        /* Styling for the Gradio app container */
+        h1, h2, h3 {
+            color: #99ccff; /* Header color */
+        }
         gradio-app {
-            background-color: #99ff99; /* Light green background for the app */
-            border-radius: 10px; /* Rounded corners */
-            padding: 20px; /* Add padding */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+            background-color: #99ff99; /* Color for the Gradio app area */
+            border-radius: 10px; /* Optional: round corners */
+            padding: 20px; /* Optional: padding around the app */
+            box-shadow: 0px 0px 10px #cc99ff; /* Optional: shadow for a 3D effect */
         }
-
-        /* Header styling */
-        h1 {
-            color: #cc99ff; /* Light purple color */
-        }
-
-        /* Custom styles for buttons */
         button {
-            background-color: #99ccff; /* Light blue button background */
-            color: black; /* Text color for buttons */
-            border: none; /* Remove border */
-            border-radius: 5px; /* Rounded corners */
-            padding: 10px 20px; /* Padding for buttons */
-            cursor: pointer; /* Pointer cursor on hover */
+            background-color: #ff99ff; /* Button color */
+            color: black; /* Button text color */
         }
-
-        button:hover {
-            background-color: #ff99ff; /* Change color on hover */
-        }
-
-        /* Custom styles for Gradio input components */
-        .input-container {
-            background-color: #cc99ff !important; /* Light purple for input backgrounds */
-            border-radius: 5px; /* Rounded corners */
-            padding: 10px !important; /* Padding inside input containers */
-            margin-bottom: 10px; /* Space between inputs */
-        }
-
-        /* Input fields styling */
-        .input-container input,
-        .input-container select {
-            background-color: white !important; /* Background color for input fields */
-            color: black !important; /* Input text color */
-            border: 1px solid #999; /* Border color */
-            border-radius: 5px; /* Rounded corners */
-            padding: 10px; /* Padding inside input fields */
-        }
-
-        /* Output table styling */
-        .output-container {
-            background-color: #99ccff !important; /* Light blue for output background */
-            border-radius: 5px; /* Rounded corners */
-            padding: 10px !important; /* Padding inside output containers */
-            margin-top: 10px; /* Space above output */
-        }
-
-        /* Adjusting table styles */
-        .output-table {
-            background-color: white !important; /* Background color for table */
-            color: black !important; /* Text color for table */
+        .input {
+            border: 2px solid #cc99ff; /* Input border color */
+            border-radius: 5px; /* Rounded borders for inputs */
         }
     </style>
 </head>
 <body>
-    <h1>Laptop Recommendation System</h1>
     <gradio-app src="https://watacent-laptopreccomendationonindiamarket.hf.space"></gradio-app>
 </body>
 </html>
