@@ -6,23 +6,24 @@
     <style>
         /* Background color for the whole page */
         body {
-            background-color: #f0f0f0; /* Light grey background */
-            font-family: Arial, sans-serif;
+            background-color: #ffe6e6; /* background color*/
+            font-family: Georgia, Times New Roman;
         }
 
         /* Customize Gradio app styles */
         gradio-app {
             --bg-color: #ffffff; /* White background for the interface */
-            --primary-text-color: #333333; /* Dark text */
+            --primary-text-color: #5252e0; /* Dark text */
             --font-size: 16px; /* Base font size */
-            --button-color: #4CAF50; /* Green buttons */
-            --input-bg-color: #e8f0fe; /* Light blue input fields */
-            --header-color: #4CAF50; /* Header text color */
+            --button-color: #ffff4d; /* Green buttons */
+            --input-bg-color: #d9ffcc; /* Light blue input fields */
+            --header-color: #f2ccff; /* Header text color */
         }
 
-        /* Styling specific elements within Gradio interface */
-        h1, h2, h3 {
-            color: #4CAF50; /* Green for headings */
+        /* Styling for title */
+        h1 {
+            color: #cc66ff	; /* Change title color to orange */
+            text-align: center; /* Center the title */
         }
 
         /* Customize buttons */
@@ -47,7 +48,7 @@
     </style>
 </head>
 <body>
-    <h1>Laptop Recommendation System</h1>
+    <h1>Laptop Recommendation System</h1> <!-- Title color is changed to orange -->
     <p>Get the best recommendations for a laptop based on your needs.</p>
 
     <gradio-app src="https://watacent-laptopreccomendationonindiamarket.hf.space"></gradio-app>
