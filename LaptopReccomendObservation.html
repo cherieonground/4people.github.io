@@ -44,30 +44,36 @@
             background-color: #ff99ff; /* Change color on hover */
         }
 
-        /* Custom styles for Gradio components */
+        /* Custom styles for Gradio input components */
         .input-container {
-            background-color: #cc99ff; /* Light purple for input backgrounds */
+            background-color: #cc99ff !important; /* Light purple for input backgrounds */
             border-radius: 5px; /* Rounded corners */
-            padding: 10px; /* Padding inside input containers */
+            padding: 10px !important; /* Padding inside input containers */
             margin-bottom: 10px; /* Space between inputs */
         }
 
-        .output-container {
-            background-color: #99ccff; /* Light blue for output background */
+        /* Input fields styling */
+        .input-container input,
+        .input-container select {
+            background-color: white !important; /* Background color for input fields */
+            color: black !important; /* Input text color */
+            border: 1px solid #999; /* Border color */
             border-radius: 5px; /* Rounded corners */
-            padding: 10px; /* Padding inside output containers */
-            margin-top: 10px; /* Space above output */
+            padding: 10px; /* Padding inside input fields */
         }
 
-        /* Input and Output Text color */
-        .input-container input, .input-container select {
-            color: black; /* Input text color */
+        /* Output table styling */
+        .output-container {
+            background-color: #99ccff !important; /* Light blue for output background */
+            border-radius: 5px; /* Rounded corners */
+            padding: 10px !important; /* Padding inside output containers */
+            margin-top: 10px; /* Space above output */
         }
 
         /* Adjusting table styles */
         .output-table {
-            background-color: white; /* Background color for table */
-            color: black; /* Text color for table */
+            background-color: white !important; /* Background color for table */
+            color: black !important; /* Text color for table */
         }
     </style>
 </head>
