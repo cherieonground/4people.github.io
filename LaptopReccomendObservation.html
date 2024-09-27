@@ -2,55 +2,51 @@
 <html lang="en">
 <head>
     <title>Laptop Recommendation</title>
-    <script type="module" src="https://gradio.s3-us-west-2.amazonaws.com/4.42.0/gradio.js"></script>
+    <script
+        type="module"
+        src="https://gradio.s3-us-west-2.amazonaws.com/4.42.0/gradio.js"
+    ></script>
     <style>
-        /* Background color for the whole page */
+        /* Basic styling for the body */
         body {
-            background-color: #ffe6e6; /* background color*/
-            font-family: Georgia, Times New Roman;
+            background-color: #ff9999; /* Light red background */
+            color: black; /* Text color */
+            font-family: Arial, sans-serif; /* Font style */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+            text-align: center; /* Center align text */
         }
 
-        /* Customize Gradio app styles */
+        /* Styling for the Gradio app container */
         gradio-app {
-            --bg-color: #ffffff; /* White background for the interface */
-            --primary-text-color: #5252e0; /* Dark text */
-            --font-size: 16px; /* Base font size */
-            --button-color: #ffff4d; /* Green buttons */
-            --input-bg-color: #d9ffcc; /* Light blue input fields */
-            --header-color: #f2ccff; /* Header text color */
+            background-color: #99ff99; /* Light green background for the app */
+            border-radius: 10px; /* Rounded corners */
+            padding: 20px; /* Add padding */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
         }
 
-        /* Styling for title */
+        /* Header styling */
         h1 {
-            color: #cc66ff	; /* Change title color to orange */
-            text-align: center; /* Center the title */
+            color: #cc99ff; /* Light purple color */
         }
 
-        /* Customize buttons */
+        /* Custom styles for buttons */
         button {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
+            background-color: #99ccff; /* Light blue button background */
+            color: black; /* Text color for buttons */
+            border: none; /* Remove border */
+            border-radius: 5px; /* Rounded corners */
+            padding: 10px 20px; /* Padding for buttons */
+            cursor: pointer; /* Pointer cursor on hover */
         }
 
         button:hover {
-            background-color: #45a049;
-        }
-
-        /* Customize input fields */
-        input {
-            background-color: #e8f0fe; /* Light blue input background */
-            padding: 10px;
-            border: 1px solid #ccc;
+            background-color: #ff99ff; /* Change color on hover */
         }
     </style>
 </head>
 <body>
-    <h1>Laptop Recommendation System</h1> <!-- Title color is changed to orange -->
-    <p>Get the best recommendations for a laptop based on your needs.</p>
-
+    <h1>Laptop Recommendation System</h1>
     <gradio-app src="https://watacent-laptopreccomendationonindiamarket.hf.space"></gradio-app>
 </body>
 </html>
